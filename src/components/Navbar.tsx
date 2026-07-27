@@ -46,8 +46,8 @@ export default function Navbar() {
         </ul>
 
         <a
-          href="/resume.docx"
-          download="Marconi-Guimaraes-Resume.docx"
+          href="/resume.pdf"
+          download="Marconi-Guimaraes-Resume.pdf"
           className="hidden md:inline-flex items-center rounded-full border border-signal-cyan/30 px-4 py-1.5 font-mono text-[13px] text-signal-cyan hover:bg-signal-cyan/10 transition-colors"
         >
           Resume
@@ -86,8 +86,8 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="/resume.docx"
-                download="Marconi-Guimaraes-Resume.docx"
+                href="/resume.pdf"
+                download="Marconi-Guimaraes-Resume.pdf"
                 onClick={() => setOpen(false)}
                 className="block py-1 text-signal-cyan"
               >

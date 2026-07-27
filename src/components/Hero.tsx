@@ -45,8 +45,8 @@ export default function Hero() {
                 View my work
               </a>
               <a
-                href="/resume.docx"
-                download="Marconi-Guimaraes-Resume.docx"
+                href="/resume.pdf"
+                download="Marconi-Guimaraes-Resume.pdf"
                 className="inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 font-medium text-sm text-paper hover:border-signal-amber/60 hover:text-signal-amber transition-colors"
               >
                 Download resume
