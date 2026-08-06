@@ -28,11 +28,13 @@ export default function Hero() {
 
           <Reveal delayMs={160}>
             <p className="mt-6 max-w-lg text-lg text-mute leading-relaxed">
-              I keep enterprise ERP systems running in{" "}
-              <span className="text-signal-amber">ADVPL</span> and Microsoft
-              SQL Server, and extend them into{" "}
-              <span className="text-signal-cyan">Next.js, Angular and Kotlin</span>{" "}
-              applications people actually enjoy using.
+              I am a{" "}
+              <span className="text-signal-amber">Software Engineer</span> building
+              Android, backend and enterprise applications with{" "}
+              <span className="text-signal-cyan"> Kotlin, TypeScript and
+              modern engineering practices</span>. From enterprise ERPs to scalable web and
+              mobile platforms, I focus on creating reliable software that delivers real
+              business impact.
             </p>
           </Reveal>
 
@@ -72,8 +74,7 @@ export default function Hero() {
           <div className="rounded-2xl border border-white/10 bg-surface/60 p-6">
             <SignalTrace className="w-full h-auto" />
             <p className="mt-4 font-mono text-[11px] text-mute leading-relaxed">
-              One signal, two protocols — the same data model moving from a
-              green-screen ERP report to a React interface.
+              Turning complex business logic into modern software experiences.
             </p>
           </div>
         </Reveal>
