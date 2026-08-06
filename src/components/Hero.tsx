@@ -2,9 +2,9 @@ import Reveal from "@/components/Reveal";
 import SignalTrace from "@/components/SignalTrace";
 
 const stats = [
-  { label: "Location", value: "Belo Horizonte, BR" },
-  { label: "Experience", value: "3+ yrs shipping" },
-  { label: "Focus", value: "ERP ↔ Web/Mobile" },
+  { label: "Location", value: "Belo Horizonte, Brazil" },
+  { label: "Experience", value: "3+ years" },
+  { label: "Stack", value: "Android • Full-Stack • DevOps" },
 ];
 
 export default function Hero() {
@@ -14,7 +14,7 @@ export default function Hero() {
         <div>
           <Reveal>
             <p className="font-mono text-[13px] text-signal-amber tracking-wide">
-              SYSTEM PROGRAMMER — FULL-STACK DEVELOPER
+              SOFTWARE ENGINEER
             </p>
           </Reveal>
 
