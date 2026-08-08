@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section id="about" className="px-6 py-24 md:py-32">
-      <div className="mx-auto max-w-5xl grid md:grid-cols-[0.4fr_0.6fr] gap-12">
-        <Reveal>
-          <div className="rounded-full p-[3px] w-32 bg-gradient-to-br from-signal-amber to-signal-cyan">
+      <div className="mx-auto max-w-5xl grid md:grid-cols-[0.4fr_0.6fr] gap-12 items-start">
+        <Reveal className="md:sticky md:top-28">
+          <div className="rounded-full p-[3px] w-36 bg-gradient-to-br from-signal-amber to-signal-cyan">
             <div className="rounded-full overflow-hidden border-4 border-ink">
               <Image
                 src="/images/marconi.jpg"
@@ -28,24 +28,34 @@ export default function About() {
         <div className="space-y-6 text-mute leading-relaxed">
           <Reveal>
             <p>
-              I&apos;m a system programmer at{" "}
-              <span className="text-paper">Multitecnica Industrial</span>,
-              where most of the codebase predates me by twenty years and none
-              of the SLAs care about that. My job is making legacy ERP logic
-              and modern web tooling agree on the same source of truth —
-              customizing TOTVS Protheus in ADVPL on one side, and shipping
-              Next.js, Angular and NestJS applications on the other.
+              I&apos;m a{" "}
+              <span className="text-paper">Software Engineer</span> working across
+              Android, backend and enterprise systems. At Multitecnica Industrial,
+              I build and maintain software around TOTVS Protheus, ADVPL and
+              Microsoft SQL Server while developing modern applications with
+              Next.js, Angular and NestJS. Most of the codebase predates me by
+              twenty years, and none of the SLAs care about that.
             </p>
           </Reveal>
 
           <Reveal delayMs={80}>
             <p>
-              Before that, at Alghorit Tecnologia, I worked across native
-              Android with Kotlin and Jetpack Compose, cross-platform mobile,
-              and real-time backend systems — including a custom SFU server
-              for an industrial field-communication platform. I care about
-              the same thing in every stack: does the interface tell the
-              truth about what the system is actually doing.
+              Before that, at Alghorit Tecnologia, I built native Android
+              applications with Kotlin and Jetpack Compose, applying Clean
+              Architecture, SOLID and automated testing. I also worked across
+              backend systems and CI/CD, designing GitLab pipelines with Docker,
+              as well as real-time communication systems using a custom WebRTC
+              SFU server for an industrial field-communication platform.
+            </p>
+          </Reveal>
+
+          <Reveal delayMs={160}>
+            <p>
+              I enjoy working across different layers of a system — from business
+              logic and databases to APIs, mobile interfaces and deployment
+              pipelines. Whatever the stack, I care about building software that
+              is reliable, maintainable and honest about what the system is
+              actually doing.
             </p>
           </Reveal>
 
