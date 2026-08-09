@@ -18,18 +18,19 @@ export const experience: ExperienceEntry[] = [
     track: "legacy",
     current: true,
     context:
-      "Enterprise software for ERP customization, process automation and systems integration.",
+      "Enterprise software for ERP customization, business process automation, systems integration and internal web applications.",
     detail:
-      "Build and maintain TOTVS Protheus customizations in ADVPL — reports, business rules, integrations and automated workflows. Optimize SQL Server queries and ship internal web apps in Next.js, Angular and NestJS that extend the ERP into the browser.",
+      "Extend TOTVS Protheus with custom integrations and ship internal web apps in Next.js, Angular and NestJS. Optimized SQL Server queries for up to an 84% performance gain, and led the company's migration from SVN to Git — setting up the collaboration workflow now used by 15+ developers across internal and partner teams.",
   },
   {
     period: "Oct 2024 — Sep 2025",
     role: "Software Development Analyst",
     company: "Alghorit Tecnologia Ltda",
     track: "modern",
-    context: "Web, backend and mobile applications for enterprise clients.",
+    context:
+      "Android, backend and web applications for enterprise clients, delivering scalable software across multiple platforms.",
     detail:
-      "Built and maintained applications in Angular, TypeScript, NestJS, Kotlin and Jetpack Compose — shipping features, integrating REST APIs and improving performance across the stack.",
+      "Built scalable Android apps in Kotlin and Jetpack Compose following Clean Architecture and SOLID, plus backend services in NestJS and frontend apps in Angular — all backed by automated tests. Designed GitLab CI/CD pipelines with Docker that cut build times by up to 67%.",
   },
   {
     period: "Apr 2023 — Oct 2024",
@@ -37,9 +38,9 @@ export const experience: ExperienceEntry[] = [
     company: "Alghorit Tecnologia Ltda",
     track: "modern",
     context:
-      "Native Android applications focused on modern, user-friendly mobile experiences.",
+      "Native Android applications focused on modern, reliable and user-friendly mobile experiences.",
     detail:
-      "Developed and maintained Kotlin + Jetpack Compose apps with SQLite persistence, working in an Agile team through feature builds, bug fixes and REST API integration.",
+      "Maintained native Android apps and led the migration of legacy XML layouts to Jetpack Compose. Implemented REST APIs and applied dependency injection with Hilt and Koin to improve scalability and maintainability.",
   },
   {
     period: "Apr 2022 — Dec 2022",
@@ -47,9 +48,9 @@ export const experience: ExperienceEntry[] = [
     company: "Intersete Telecom",
     track: "legacy",
     context:
-      "Technical support and network infrastructure for residential and business customers.",
+      "Technical support and network infrastructure maintenance for residential and business customers.",
     detail:
-      "Diagnosed connectivity issues over remote support and configured fiber and wireless network equipment — the ground floor for a career built on making infrastructure reliable.",
+      "Diagnosed and resolved connectivity issues for 20+ customers daily, keeping downtime to a minimum. Configured routers and fiber optic equipment, and supported field technicians on incident resolution.",
   },
 ];
 
@@ -72,21 +73,21 @@ export const projects: ProjectEntry[] = [
     year: "2026",
     name: "Laboratory Operations Dashboard",
     summary:
-      "Real-time monitoring dashboard for laboratory shifts, running on wall-mounted TVs. Auto-scrolling queues, visual indicators and audible alerts flag newly received samples the moment they land.",
+      "Real-time monitoring dashboard for laboratory shifts, running on wall-mounted TVs. Visual indicators and audible alerts flag newly received samples the moment they land, cutting response times for sample analyses.",
     stack: ["Real-time UI", "TV Displays", "Alerting"],
   },
   {
     year: "2025",
     name: "Contourline Clientes",
     summary:
-      "Cross-platform client app shipped to both the App Store and Google Play. Built and maintained new features, fixes and performance improvements across a single Ionic + Angular codebase.",
+      "Cross-platform client app developed and published to both the App Store and Google Play. Built and maintained new features, fixes and performance improvements across a single Ionic + Angular codebase.",
     stack: ["Ionic", "Angular", "iOS", "Android"],
   },
   {
     year: "2023 – 2025",
     name: "Alghorit Device",
     summary:
-      "Industrial communication platform for field operations — real-time messaging, digital checklists and radio comms over a custom SFU (Selective Forwarding Unit) server.",
+      "Industrial communication platform for field operations — real-time messaging and radio features built on a custom WebRTC SFU (Selective Forwarding Unit) server.",
     stack: ["WebRTC", "SFU", "Mobile", "Backend"],
   },
 ];
@@ -101,19 +102,35 @@ export const skillGroups: SkillGroup[] = [
   {
     label: "Languages",
     track: "neutral",
-    items: ["ADVPL", "TypeScript", "Kotlin", "Java", "SQL"],
+    items: ["Kotlin", "Java", "TypeScript", "SQL", "ADVPL"],
+  },
+  {
+    label: "Android",
+    track: "modern",
+    items: [
+      "Jetpack Compose",
+      "XML",
+      "MVVM",
+      "Coroutines",
+      "Flow",
+      "Hilt",
+      "Koin",
+      "Android SDK",
+      "SQLite",
+    ],
   },
   {
     label: "Frontend",
     track: "modern",
     items: [
+      "React",
       "Next.js",
       "Angular",
-      "React",
-      "Jetpack Compose",
       "Ionic",
+      "HTML5",
+      "SCSS",
+      "CSS3",
       "Tailwind CSS",
-      "HTML5 / CSS3",
     ],
   },
   {
@@ -122,42 +139,66 @@ export const skillGroups: SkillGroup[] = [
     items: ["NestJS", "Node.js", "REST APIs"],
   },
   {
-    label: "ERP & Enterprise",
+    label: "Testing",
+    track: "neutral",
+    items: ["JUnit", "Mockito", "Jest", "Cypress"],
+  },
+  {
+    label: "Database",
+    track: "neutral",
+    items: ["Microsoft SQL Server", "PostgreSQL", "SQLite", "MySQL"],
+  },
+  {
+    label: "Architecture & Principles",
+    track: "neutral",
+    items: ["Clean Architecture", "SOLID", "OOP", "Design Patterns"],
+  },
+  {
+    label: "DevOps & Infrastructure",
+    track: "neutral",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "GitLab CI/CD",
+      "Docker",
+      "YAML",
+      "Nginx",
+      "Linux",
+      "SVN",
+    ],
+  },
+  {
+    label: "ERP & Enterprise Systems",
     track: "legacy",
     items: [
       "TOTVS Protheus",
       "ERP Customization",
       "Business Rules",
-      "Reports",
       "System Integrations",
     ],
   },
   {
-    label: "Data",
-    track: "neutral",
-    items: ["SQL Server", "PostgreSQL", "SQLite"],
-  },
-  {
-    label: "Real-Time",
+    label: "Real-Time Communication",
     track: "modern",
     items: ["WebRTC", "SFU Architecture"],
   },
   {
-    label: "Tools & Practice",
+    label: "Methodologies",
     track: "neutral",
-    items: ["Git", "GitHub", "GitLab", "SVN", "Docker", "Agile / Scrum", "OOP"],
+    items: ["Scrum", "Kanban", "Agile Software Development"],
   },
 ];
 
 export const languages = [
   { name: "Portuguese", level: "Native", value: 100 },
-  { name: "English", level: "Professional working proficiency", value: 75 },
+  { name: "English", level: "Upper Intermediate", value: 80 },
 ];
 
 export const contact = {
   email: "marconijunior.dev@gmail.com",
   location: "Belo Horizonte, MG, Brazil",
-  phone: "+55 (31) 9 9939-7039",
+  phone: "+55 (31) 99939-7039",
   github: "https://github.com/MarconiJunior",
   linkedin: "https://www.linkedin.com/in/marconijunior",
 };
