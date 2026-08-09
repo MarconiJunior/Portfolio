@@ -1,7 +1,9 @@
-import type { Metadata } from "next";
-import { Bricolage_Grotesque, Work_Sans, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { Bricolage_Grotesque, JetBrains_Mono, Work_Sans } from "next/font/google";
+
 import "./globals.css";
 
+import type { Metadata } from "next";
 const display = Bricolage_Grotesque({
   variable: "--font-display-src",
   subsets: ["latin"],
@@ -21,14 +23,14 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://marconiguimaraes.dev"),
-  title: "Marconi Guimaraes — System Programmer & Full-Stack Developer",
+  metadataBase: new URL("https://marconiguimaraes.com"),
+  title: "Marconi Guimaraes — Software Engineer",
   description:
-    "Portfolio of Marconi Maciel Guimaraes Junior — system programmer bridging TOTVS Protheus/ADVPL enterprise systems with modern Next.js, Angular, NestJS and Kotlin stacks.",
+    "Software Engineer specializing in Android, backend and enterprise software. Experienced with Kotlin, Jetpack Compose, NestJS, Next.js, CI/CD and scalable system design.",
   openGraph: {
-    title: "Marconi Guimaraes — System Programmer & Full-Stack Developer",
+    title: "Marconi Guimaraes — Software Engineer",
     description:
-      "I bridge legacy enterprise systems with modern web and mobile stacks.",
+      "Building scalable Android, backend and enterprise solutions with modern software engineering practices.",
     type: "website",
   },
 };
@@ -45,6 +47,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-ink text-paper font-body antialiased selection:bg-signal-cyan/30 selection:text-paper">
         {children}
+        <Analytics />
       </body>
     </html>
   );
